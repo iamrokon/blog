@@ -35,7 +35,7 @@
                                 </label>
                                 <input
                                     class='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600'
-                                    id="title" v-model="form.title" type="text" placeholder="e.g. Senior Back-End Engineer (PHP & Laravel)"
+                                    id="title" v-model="form.title" type="text" placeholder=""
                                     >
                                     <p v-if="form.errors.title" class="mt-2 text-sm text-red-600 dark:text-red-500">
                                         {{ form.errors.title }}
@@ -49,7 +49,7 @@
                                 </label>
                                 <input
                                     class='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600'
-                                    id="role" type="text" v-model="form.role" placeholder="Senior Laravel Developer"
+                                    id="role" type="text" v-model="form.role" placeholder=""
                                 >
                                     <p v-if="form.errors.role" class="mt-2 text-sm text-red-600 dark:text-red-500">
                                         {{ form.errors.role }}
@@ -59,7 +59,7 @@
                             <!-- {{-- Employment Type --}} -->
                             <div class="mt-8">
                                 <label class="block text-sm font-medium text-gray-700 dark:text-gray-300" for="employment_type">
-                                    Employment Type
+                                    Blog Type
                                 </label>
                                 <select
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600"
@@ -80,7 +80,7 @@
                                 <input
                                     class='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600'
                                     id="company_name" v-model="form.company_name" type="text"
-                                    placeholder="Pennsylvania Paper and Supply Company">
+                                    placeholder="">
                                     <p v-if="form.errors.company_name" class="mt-2 text-sm text-red-600 dark:text-red-500">
                                         {{ form.errors.company_name }}
                                     </p>
@@ -94,7 +94,7 @@
                                 <input
                                     class='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600'
                                     id="apply_url" type="url" v-model="form.apply_url"
-                                    placeholder="https://yourcompany.com/careers">
+                                    placeholder="">
                                     <p v-if="form.errors.apply_url" class="mt-2 text-sm text-red-600 dark:text-red-500">
                                         {{ form.errors.apply_url }}
                                     </p>
@@ -107,7 +107,7 @@
                                 </label>
                                 <textarea
                                     class='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600'
-                                    id="description" v-model="form.description" rows="3" placeholder="e.g. Senior Laravel Developer"></textarea>
+                                    id="description" v-model="form.description" rows="3" placeholder=""></textarea>
                                     <p v-if="form.errors.description" class="mt-2 text-sm text-red-600 dark:text-red-500">
                                         {{ form.errors.description }}
                                     </p>
@@ -121,7 +121,7 @@
                                 <input
                                     class='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600'
                                     id="salary" v-model="form.salary" type="text"
-                                    placeholder="e.g, $120,000 - $145,000 or maybe €80,000 - €102,000">
+                                    placeholder="">
                                     <p v-if="form.errors.salary" class="mt-2 text-sm text-red-600 dark:text-red-500">
                                         {{ form.errors.salary }}
                                     </p>
@@ -135,7 +135,7 @@
                                 <input
                                     class='mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-indigo-600 dark:focus:ring-indigo-600'
                                     id="company_logo" v-model="form.company_logo" type="url"
-                                    placeholder="https://yourwebsite.com/images/company-logo.png">
+                                    placeholder="">
                                     <p v-if="form.errors.company_logo" class="mt-2 text-sm text-red-600 dark:text-red-500">
                                         {{ form.errors.company_logo }}
                                     </p>

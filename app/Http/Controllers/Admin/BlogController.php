@@ -56,9 +56,9 @@ class BlogController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Job $job)
+    public function edit($job)
     {
-        // dd($job);
+        $job = Job::findOrFail($job);
         return inertia('Admin/Blogs/Edit', [
             'employmentTypes' => EmploymentTypeResource::collection(EmploymentType::cases()),
             'job' => new JobResource($job),
