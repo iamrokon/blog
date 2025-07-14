@@ -13,6 +13,9 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        User::factory()->count(3)->create([
+            'tenant_id' => 1,
+        ]);
         User::factory()->admin()->create();
     }
 }

@@ -40,16 +40,16 @@ const showingNavigationDropdown = ref(false);
                                     Dashboard
                                 </NavLink>
                                 <NavLink
-                                    :href="route('admin.blogs.index')"
+                                    :href="route('admin.posts.index')"
                                     :active="
-                                        route().current('admin.blogs.index')
+                                        route().current('admin.posts.index')
                                     "
                                 >
                                     Blogs
                                 </NavLink>
                                 <NavLink
-                                    :href="route('admin.blogs.create')"
-                                    :active="route().current('admin.blogs.create')"
+                                    :href="route('admin.posts.create')"
+                                    :active="route().current('admin.posts.create')"
                                 >
                                     Create a Blog
                                 </NavLink>
@@ -156,14 +156,14 @@ const showingNavigationDropdown = ref(false);
                             Dashboard
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="route('admin.blogs.index')"
-                            :active="route().current('admin.blogs.index')"
+                            :href="route('admin.posts.index')"
+                            :active="route().current('admin.posts.index')"
                         >
                             Blogs
                         </ResponsiveNavLink>
                         <ResponsiveNavLink
-                            :href="route('admin.blogs.create')"
-                            :active="route().current('admin.blogs.index')"
+                            :href="route('admin.posts.create')"
+                            :active="route().current('admin.posts.index')"
                         >
                             Create a Blog
                         </ResponsiveNavLink>

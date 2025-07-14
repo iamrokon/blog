@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Tenant;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,9 +19,13 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        Tenant::factory()->create([
+            'name' => 'Test Tenant',
+            'domain' => '127.0.0.1',
+        ]);
         $this->call([
             UserSeeder::class,
-            JobSeeder::class,
+            PostSeeder::class,
         ]);
     }
 }
